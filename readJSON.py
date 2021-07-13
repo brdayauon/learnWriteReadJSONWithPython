@@ -23,13 +23,13 @@ class Solution:
 		f.close()
 
 	def getNameOfContacts(self, fileName):
-		with open('sample.json', 'r') as openfile:
 
-			json_object = json.load(openfile)
+		with open('sample.json', 'r') as openfile
+			content = json.load(openfile)
 
 		name = []
-		#print(json_object)
-		for contact in json_object['contacts']:
+		#print(content)
+		for contact in content['contacts']:
 			for key,value in contact.items():
 				# print(key,value)
 				if key == 'name':
@@ -38,10 +38,6 @@ class Solution:
 		print(name)
 
 s = Solution()
-
-print('--------------------------')
-#one way to open json file
-
 
 s.readFromJSONFileWithClose(fileName)
 
