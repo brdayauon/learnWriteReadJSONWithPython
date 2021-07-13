@@ -38,4 +38,4 @@ dictionary={
 fileName = 'sample.json'
 s = Solution()
 
-s.writeToJSON(fileName, dictionary)
+s.writeToJSON(fileName, contactDict)

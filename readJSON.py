@@ -24,7 +24,7 @@ class Solution:
 
 	def getNameOfContacts(self, fileName):
 
-		with open('sample.json', 'r') as openfile
+		with open('sample.json', 'r') as openfile:
 			content = json.load(openfile)
 
 		name = []
